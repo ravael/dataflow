@@ -6,7 +6,7 @@ steps:
     args:
       - '-c'
       - |
-        ./submit.sh DataflowDemoPipeline \
+        submit.sh DataflowDemoPipeline \
           --project=responsive-hall-125714 \
           --stagingLocation=gs://my-project-data-bucket/ \
           --gcpTempLocation=gs://my-project-data-bucket/ \
