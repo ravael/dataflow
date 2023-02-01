@@ -6,7 +6,9 @@ steps:
     args:
       - '-c'
       - |
-        bash submit.sh DataflowDemoPipeline \
+        apt-get update
+        apt-get install sudo
+        sudo bash submit.sh DataflowDemoPipeline \
           --project=responsive-hall-125714 \
           --stagingLocation=gs://my-project-data-bucket/ \
           --gcpTempLocation=gs://my-project-data-bucket/ \
