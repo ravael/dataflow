@@ -8,7 +8,7 @@ steps:
       - |
         apt-get update
         apt-get install sudo
-        sudo bash /dataflow/submit.sh DataflowDemoPipeline \
+        sudo bash ./dataflow/submit.sh DataflowDemoPipeline \
           --project=responsive-hall-125714 \
           --stagingLocation=gs://my-project-data-bucket/ \
           --gcpTempLocation=gs://my-project-data-bucket/ \
