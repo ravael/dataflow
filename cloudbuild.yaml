@@ -2,11 +2,11 @@ steps:
   - id: "build and submit the dataflow job"
     name: maven:3.6.0-jdk-11-slim
     dir: 'dataflow'
-    entrypoint: '/bin/sh'
+    entrypoint: 'bash'
     args:
       - '-c'
       - |
-        ./submit.sh DataflowDemoPipeline \
+        bash submit.sh DataflowDemoPipeline \
           --project=responsive-hall-125714 \
           --stagingLocation=gs://my-project-data-bucket/ \
           --gcpTempLocation=gs://my-project-data-bucket/ \
