@@ -1,12 +1,4 @@
 steps:
-  - id: "get build number"
-    name: gcr.io/cloud-builders/git
-    dir: 'dataflow'
-    entrypoint: 'bash'
-    args:
-      - '-c'
-    waitFor: ['-']
-
   - id: "build and submit the dataflow job"
     name: maven:3.6.0-jdk-11-slim
     dir: 'dataflow'
