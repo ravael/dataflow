@@ -15,4 +15,3 @@ steps:
           --maxNumWorkers=10 \
           --jobName=demo \
           --region=us-central1
-    waitFor: ['get build number']
